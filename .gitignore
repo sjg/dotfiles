@@ -1,0 +1,67 @@
+*.DS_Store
+*.LSOverride
+Thumbs.db
+.bundle
+
+############################################
+# IDE generated files
+############################################
+.idea/
+*.iml
+.vscode/
+.vscode/ipch/
+.dropboxignore
+.pbxproj
+.xcscheme
+.xcworkspacedata
+npm-debug.log
+
+# From: https://gist.github.com/octocat/9257657
+############################################
+# OS generated files
+############################################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+############################################
+# OS generated files
+############################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+############################################
+# Compiled source #
+############################################
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.a
+
+############################################
+# Packages #
+############################################
+*.rar
+*.tar
+*.zip
+*.jar
+
+############################################
+# OS junk files #
+############################################
+.DS_Store
+._*
+.Trashes
+Icon?
+enthumbs.db
+Thumbs.db
