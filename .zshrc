@@ -13,7 +13,7 @@ export CLICOLOR_FORCE=1
 unsetopt nomatch
 
 # Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+# export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
@@ -126,11 +126,11 @@ if [ -s "$HOME/.nvm/nvm.sh" ]; then
     source "$NVM_DIR/nvm.sh"
 fi
 
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=${share_path}/zsh-syntax-highlighting/highlighters
 
-source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${share_path}/git-extras/git-extras-completion.zsh
+source ${share_path}/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${share_path}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -159,7 +159,7 @@ export PATH="/Users/sjg/playground/go/bin:$PATH"
 # 1Password CLI
 eval "$(op completion zsh)"; compdef _op op
 
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 # Ruby Fix - https://mac.install.guide/ruby/13.html
 if [ -d "/usr/local/opt/ruby/bin" ]; then
